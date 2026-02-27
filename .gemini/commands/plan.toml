@@ -1,0 +1,8 @@
+description = "Produces a plan to solve a larger problem, step by step."
+prompt = """
+<instructions>
+1. **Strategic Planning**: Use the `enter_plan_mode` tool to safely research and design, then use the `planner` agent to create a step-by-step implementation plan for: `{{args}}`.
+2. **Recording**: The planner MUST use `write_file` to record the finalized steps in a `PLAN.md` or `TODO.md` file within the session's `plans` directory after completing its analysis.
+3. **Detail**: Ensure the plan includes specific file paths and verification targets.
+</instructions>
+"""

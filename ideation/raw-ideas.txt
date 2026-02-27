@@ -1,0 +1,2 @@
+I want an app where users pick their mood (tired, stressed, happy) and it recommends a coffee (espresso, chamomile tea, frappuccino). It also needs a daily coffee tip API endpoint showing a random tip on the homepage.
+web app that recommends coffee based on the user's mood and includes a 'Coffee Tip of the Day' API endpoint displayed on the homepage.
