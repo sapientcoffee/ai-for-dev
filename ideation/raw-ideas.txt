@@ -1,2 +1,61 @@
-I want an app where users pick their mood (tired, stressed, happy) and it recommends a coffee (espresso, chamomile tea, frappuccino). It also needs a daily coffee tip API endpoint showing a random tip on the homepage.
-web app that recommends coffee based on the user's mood and includes a 'Coffee Tip of the Day' API endpoint displayed on the homepage.
+# Cymbal Coffee: The "Bean-to-Cup" Brainstorming Board ☕
+
+## The "Spark" (Core Idea)
+We want to build an app that acts as a digital barista. It reads your mood, serves up the perfect coffee recommendation, and gives you a little nugget of coffee wisdom to start your day right. 
+
+---
+
+## 🎭 Feature 1: The Mood-to-Brew Matchmaker
+*How are you feeling, and what should you be drinking?*
+
+**Initial Thoughts:**
+- User selects their current state of mind (Tired, Stressed, Happy).
+- The app instantly recommends a beverage perfectly suited for that mood.
+
+**"Double Shot" Ideas (Future Iterations):**
+- **Expand the Moods:** Add states like "Creative" (pour-over), "Hangover" (cold brew with an extra shot), "Cozy" (mocha), or "Adventurous" (nitro cold brew).
+- **Time of Day Context:** "Tired" at 8 AM = Triple shot Americano. "Tired" at 8 PM = Decaf Latte or Herbal Tea. 
+- **The "Surprise Me" Button:** For the truly undecided.
+- **Customizable Beans:** Ask the user if they prefer light, medium, or dark roasts before recommending.
+
+---
+
+## 💡 Feature 2: The "Daily Grind" Tip API
+*A 'Coffee Tip of the Day' API endpoint displayed on the homepage.*
+
+**Initial Thoughts:**
+- A simple, random tip about coffee brewing or trivia on the homepage.
+
+**"Double Shot" Ideas (Future Iterations):**
+- **Category Tags:** Tips categorized by "Brewing Methods" (e.g., French Press ratios), "Trivia" (e.g., origin stories), or "Fun Facts".
+- **Dynamic Content:** A public REST API (`/api/tips/daily`) that other devs can use to get coffee tips.
+- **"Save for Later":** Allow users to favorite tips they want to try at home.
+
+---
+
+## 🎨 Vibe & Aesthetics (The "Cafe" Feel)
+- **Color Palette:** Warm, earthy tones. Think roasted chestnut, creamy latte foam, and espresso black. 
+- **Typography:** Modern, clean, but with a touch of artisan flair (like a chalk menu board).
+- **Interactions:** 
+    - The mood selector should be fun and bouncy. 
+    - When a recommendation appears, maybe a little steam animation over a coffee cup icon.
+- **Microcopy:** Instead of "Loading...", use "Brewing your recommendation..." or "Grinding beans..."
+
+---
+
+## 🚀 The MVP (Minimum Viable Pour) - What we are building NOW:
+1. **Frontend:** Next.js application with a clean, responsive layout.
+2. **Mood Selector:** 3 simple buttons:
+   - 🥱 **Tired** -> ☕ **Espresso** ("Wake up and smell the coffee!")
+   - 😫 **Stressed** -> 🍵 **Chamomile Tea** ("Take a deep breath. We've got you.")
+   - 😄 **Happy** -> 🥤 **Frappuccino** ("Treat yourself!")
+3. **Tip of the Day:** An API route (`/api/tip-of-the-day`) that returns a random string from a list of hardcoded tips.
+4. **Display:** Show the tip prominently on the homepage alongside the mood selector.
+
+---
+
+## 📝 Backlog / "The Tip Jar" (Ideas for Later)
+- Integration with local cafes (e.g., "Order this Espresso near you").
+- User accounts to track their mood history and favorite drinks.
+- "Share your mood" feature for social media.
+- Sound effects (clinking mugs, coffee shop ambient noise toggle).
