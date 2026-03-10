@@ -14,7 +14,7 @@ if [ -z "$FILE_PATH" ] || [ "$FILE_PATH" == "null" ]; then
 fi
 
 # Only lint files in linter-demo/ and only for file modification tools
-if [[ "$FILE_PATH" == linter-demo/* ]] && [[ "$TOOL_NAME" =~ ^(write_file|replace|edit_file)$ ]]; then
+if [[ "$FILE_PATH" == *"linter-demo/"* ]] && [[ "$TOOL_NAME" =~ ^(write_file|replace|edit_file)$ ]]; then
     # Run the linter
     LINT_OUTPUT=$(node linter-demo/lint.js "$FILE_PATH" 2>&1)
     LINT_EXIT_CODE=$?

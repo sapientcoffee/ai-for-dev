@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "AfterTool": [
+      {
+        "matcher": "write_file|replace|edit_file",
+        "hooks": [
+          {
+            "name": "linter-demo-hook",
+            "type": "command",
+            "command": "bash .gemini/hooks/run-linter.sh",
+            "timeout": 10000
+          }
+        ]
+      }
+    ]
+  }
+}
